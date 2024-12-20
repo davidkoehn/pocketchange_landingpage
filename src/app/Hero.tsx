@@ -56,7 +56,7 @@ export default function Hero() {
           style={{ marginBottom: "80px" }}
         >
           <h1 className={styles.headline}>POCKET VENTURES</h1>
-          <h2 className={styles.subheadline}>Welcome to PocketChange.fund</h2>
+          <h2 className={styles.subheadline}>Welcome to PocketChange</h2>
           <motion.div
             className={styles.serviceBox}
             variants={{
