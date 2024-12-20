@@ -1,0 +1,312 @@
+.container {
+  padding-top: 56px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+.textContainer {
+  margin-top: 64px;
+  font-family: "Trueno Bold";
+  max-width: 1280px;
+  text-align: justify;
+}
+
+.headline {
+  color: #203c4f;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  font-family: "Trueno Bold";
+}
+
+.subheadline {
+  font-family: "Trueno Bold";
+  color: #203c4f;
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.bodyText {
+  font-family: "RosaSans";
+  color: #203c4f;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.servicesContainer {
+  margin-top: 48px;
+  width: 100%;
+}
+
+.servicesWrapper {
+  max-width: 1440px;
+}
+
+.servicesHeadlineBox {
+  position: relative;
+  background: linear-gradient(180deg, #96b0bb 90%, transparent 100%);
+  padding: 24px;
+  padding-top: 0px;
+  border-radius: 0px;
+  text-align: left;
+  margin-bottom: 16px;
+  width: calc(100vw + 24px);
+  margin-top: -8px;
+  margin-left: -24px;
+}
+
+.servicesHeadlineBoxSeparator {
+  position: absolute;
+  padding: 16px;
+  border-radius: 0px;
+  text-align: left;
+  top: -47px;
+  height: 64px;
+  min-width: 110vw;
+  margin-left: -32px;
+  overflow: hidden;
+}
+
+.servicesHeadlineBoxGray {
+  padding: 16px;
+  border-radius: 0px;
+  text-align: left;
+  margin-bottom: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.servicesHeadline {
+  color: white;
+  /*text-shadow: #888 1px 1px, #888 -1px -1px, #888 1px -1px, #888 -1px 1px;*/
+  font-family: "Trueno Bold";
+  font-size: 2.5em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.servicesSubheadline {
+  color: white;
+  /*text-shadow: #888 1px 1px, #888 -1px -1px, #888 1px -1px, #888 -1px 1px;*/
+  font-size: 1.25em;
+}
+
+.headlineBlack {
+  color: white;
+  font-family: "Trueno Bold";
+  font-size: 2em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.subheadlineBlack {
+  color: white;
+  font-size: 1.25em;
+}
+
+.serviceBox {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 32px;
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(24px);
+  flex: 1 1 30%;
+  margin-bottom: 16px;
+  text-align: justify;
+  max-width: 1280px;
+}
+
+.serviceBoxWhite {
+  background-color: rgba(255, 255, 255, .5);
+  padding: 32px;
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(24px);
+  flex: 1 1 30%;
+  margin-bottom: 16px;
+  text-align: justify;
+  max-width: 1280px;
+}
+
+.logo {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 25%;
+  border: 1px solid #cccccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.serviceIcon {
+  max-height: 96px;
+  margin-right: 16px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.headerServiceIcon {
+  max-height: 120px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 9999px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.9);
+}
+
+.serviceTitle {
+  color: black;
+  font-family: "Trueno Bold";
+  text-align: left;
+  font-size: 1.25em;
+  line-height: 100%;
+  margin-bottom: 0.5em;
+}
+
+.serviceDescription {
+  color: black;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .serviceBox {
+    flex: 1 1 100%;
+  }
+}
+
+.ctaButton {
+  padding: 0.5rem 1rem;
+  background-color: #39642d;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.ctaButton:hover {
+  transform: scale(1.05);
+}
+
+.ctaButton:focus {
+  outline: none;
+}
+
+.container {
+  padding-top: 56px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+.testimonialsContainer {
+  position: relative;
+  width: 640px;
+  max-width: 90vw;
+  margin: auto;
+  margin-bottom: 80px;
+  padding: 20px;
+  color: black !important;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonialsContent {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.testimonialSlide {
+  max-width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.testimonialLink {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.iconBox {
+  width: 96px;
+  height: 96px;
+  border-radius: 256px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.testimonialIcon {
+  width: 96px;
+  height: 96px;
+}
+
+.testimonialText {
+  text-align: left;
+  flex: 1;
+}
+
+.testimonialTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.testimonialSubtitle {
+  font-style: normal;
+  font-weight: 400;
+  color: #777;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.testimonialDotsContainer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonialDot {
+  width: 6px;
+  height: 6px;
+  background-color: #777;
+  border-radius: 50%;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: black;
+}
+
+.testimonialTouchArea {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 30px);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

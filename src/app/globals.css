@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@font-face {
+  font-family: "Trueno";
+  src: url("/fonts/TruenoRg.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Trueno Bold";
+  src: url("/fonts/TruenoBd.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RosaSans";
+  src: url("/fonts/RosaSans-Light.ttf") format("truetype");
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: "RosaSans" !important;
+  font-weight: bold;
+  font-size: 18px;
+  text-underline-offset: 4px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.glow {
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.red-glow {
+  filter: drop-shadow(0 0 12px #eb5050);
+}
+
+.dark-shadow {
+  filter: drop-shadow(0 0 6px #00000077) drop-shadow(0 0 12px #000000);
+}
+
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  z-index: 9999;
+}
+
+.loading-animation {
+  width: 142px;
+  height: 142px;
+  border: solid 1px 87544e;
+  border-radius: 71px;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.btn-simple {
+  color: #fff;
+  transition: 0.2s ease-in-out;
+  touch-action: none;
+  user-select: none;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.btn-simple:hover {
+  color: #fff;
+  filter: drop-shadow(0px 0px 6px rgba(255, 127, 255, 1));
+  transition: 0.2s ease-in-out;
+}
+
+@font-face {
+  font-family: "Skeleton Type One Bold Condensed";
+  src: url("/fonts/SkeletonTypeOne-PosterBold.ttf") format("truetype");
+}
+
+.skeleton {
+  font-family: "Skeleton Type One Bold Condensed";
+}
+
+.skeleton {
+  font-family: "Skeleton Type One Bold Condensed";
+}
+
+.title-number {
+  position: relative;
+  filter: drop-shadow(0 0 12px #004ffe);
+  text-shadow: 2px 0 0 #0003, 0 -2px 0 #0003, 0 2px 0 #0003, -2px 0 0 #0003;
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group:hover .group-hover\:scale-110 {
+  transform: scale(1.1);
+}
